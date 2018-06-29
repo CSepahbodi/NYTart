@@ -1,6 +1,3 @@
-"<h3 class='articleHeadline'><span class='label label-primary'>" +
-                      articleCounter + "</span><a href=" + NYTData.response.docs[i].web_url + "<strong> " +
-                      NYTData.response.docs[i].headline.main + "</a></strong></h3>"
 var authKey = "2f87bc62d92940c88ec577500b62696a";
 var searchTerm = "";
 var numResults = 0;
@@ -29,7 +26,7 @@ function runQuery(numArticles, queryURL) {
               $("#article-well-" + articleCounter)
                   .append(
                       "<h3 class='articleHeadline'><span class='label label-primary'>" +
-                      articleCounter + "</span><a href=" + NYTData.response.docs[i].web_url + "<strong> " +
+                      articleCounter + "</span><a href=" + NYTData.response.docs[i].web_url + "><strong> " +
                       NYTData.response.docs[i].headline.main + "</a></strong></h3>"
                   );
               console.log(NYTData.response.docs[i].headline.main);
